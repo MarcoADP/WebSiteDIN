@@ -181,3 +181,16 @@ function university_admin_style() {
   </style>';
 }
 require get_template_directory() . '/customizer.php';
+
+
+/**
+ * Add search box to primary menu
+ */
+function wpgood_nav_search($items, $args) {
+    // If this isn't the primary menu, do nothing
+    if( !($args->theme_location == 'primary') ) 
+    return $items;
+    // Otherwise, add search form
+    return $items . '<li>' . get_search_form(false) . '</li>';
+}
+add_filter('wp_nav_menu_items', 'wpgood_nav_search', 10, 2);

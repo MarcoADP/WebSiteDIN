@@ -50,6 +50,7 @@
 								'fallback_cb'	 => false
 							) 
 						);
+						
 						wp_nav_menu(
 							array(
 								'theme_location' => 'primary',
@@ -58,8 +59,9 @@
 								'fallback_cb'	 => false
 							)
 						);
-  					} ?>
 
+  					} ?>
+					
 					<?php if (is_front_page()) : ?>
 						<?php
    							$args = array(
