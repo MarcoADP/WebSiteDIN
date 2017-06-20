@@ -24,16 +24,16 @@ include_once __DIR__ . '/wp-config.common.php';
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wordpressdb');
+define('DB_NAME', 'dindb');
 
 /** MySQL database username */
-define('DB_USER', 'wordpress');
+define('DB_USER', 'din');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'mywordpresspassword');
+define('DB_PASSWORD', 'dinmysqlpassword');
 
 /** MySQL hostname */
-define('DB_HOST', 'db');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
