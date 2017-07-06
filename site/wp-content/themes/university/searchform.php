@@ -12,8 +12,7 @@
     <div>
         <span class="screen-reader-text"><?php echo _x( 'Search for:', 'label'); ?></span>
         <input type="text" placeholder="<?php echo esc_attr_x( 'Pesquisar&hellip;', 'placeholder'); ?>" value="<?php echo get_search_query(); ?>" name="s" id="s" >
-            <span class="genericon genericon-search"/>
-        </input>
-        <input type="submit" id="searchsubmit" value="<?php echo _x( 'Search', 'submit button'); ?>" />
+		<span id="searchicon" class="genericon genericon-search"/>
     </div>
+	<input type="submit" id="searchsubmit" value="<?php echo _x( 'Search', 'submit button'); ?>" />
 </form>
