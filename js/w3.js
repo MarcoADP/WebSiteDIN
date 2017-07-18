@@ -230,15 +230,19 @@ w3.slideshow = function (sel, ms, func) {
 w3.includeHTML = function(cb) {
   var z, i, elmnt, file, xhttp;
   z = document.getElementsByTagName("*");
+  //console.log(z);
   for (i = 0; i < z.length; i++) {
     elmnt = z[i];
     file = elmnt.getAttribute("w3-include-html");
     if (file) {
+      //console.log("file : " + file);
       xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
+          //console.log(this.responseText);
           elmnt.innerHTML = this.responseText;
           elmnt.removeAttribute("w3-include-html");
+          //console.log(cb);
           w3.includeHTML(cb);
         }
       }      
