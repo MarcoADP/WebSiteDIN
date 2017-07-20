@@ -7,6 +7,7 @@ body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 110px; /*footer's height=80 + margin-top=30*/
+  background-color: #effcff;
 }
 
 h1,
@@ -18,6 +19,11 @@ h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  margin-bottom: 10px;
 }
 
 
@@ -82,7 +88,6 @@ header .logo-text .h2 {
   box-shadow: 0 -4px 0 #d0d0d0 inset;
 }
 
-
 .navbar-custom .nav li a {
   font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
@@ -132,6 +137,30 @@ header .logo-text .h2 {
 
 .menu-padding {
   padding-top: 50px;
+}
+
+/*
+* Section
+*/
+
+section {
+  box-shadow: 0 -4px 0 #3379b6; /*top border*/
+  border: 1px solid #e0e0e0;
+  border-top-width: 0;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+section h1,
+section h2,
+section h3 {
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+section p {
+  text-align: justify;
 }
 
 
