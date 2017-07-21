@@ -24,8 +24,8 @@ h6 {
 .breadcrumb {
   background-color: transparent;
   margin-bottom: 10px;
+  margin-left: 20px;
 }
-
 
 /*
 * Header
@@ -143,23 +143,24 @@ header .logo-text .h2 {
 * Section
 */
 
-section {
+.content-section {
   box-shadow: 0 -4px 0 #3379b6; /*top border*/
   border: 1px solid #e0e0e0;
   border-top-width: 0;
   background-color: white;
   margin-bottom: 10px;
+  padding: 1px 25px 10px 25px;
 }
 
-section h1,
-section h2,
-section h3 {
+.content-section h1,
+.content-section h2,
+.content-section h3 {
   border-bottom: 1px solid #e2e2e2;
   padding-bottom: 5px;
   padding-top: 5px;
 }
 
-section p {
+.content-section p {
   text-align: justify;
 }
 

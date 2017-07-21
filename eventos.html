@@ -61,86 +61,88 @@
 
       <div class="row row-offcanvas row-offcanvas-right">
       
-        <section class="col-xs-12 col-sm-9 col-lg-10">
-          <h2>Agenda</h2>
-            <p class="lead">
-                Confira todos os próximos eventos organizados e apoiados pelo Departamento de Informática!
-            </p>
+        <div class="col-xs-12 col-sm-9 col-lg-10">
+            <section class="content-section">
+              <h2>Agenda</h2>
+                <p class="lead">
+                    Confira todos os próximos eventos organizados e apoiados pelo Departamento de Informática!
+                </p>
 
-            <hr />
+                <hr />
 
-            <div class="agenda">
-                <div class="table-responsive">
-                    <table class="table table-condensed table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Dia</th>
-                                <th>Horário</th>
-                                <th>Evento</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Single event in a single day -->
-                            <tr>
-                                <td class="agenda-date active" rowspan="1">
-                                    <div class="dayofmonth">25</div>
-                                    <div class="dayofweek">Segunda - Feira</div>
-                                    <div class="shortdate text-muted">Julho, 2017</div>
-                                </td>
-                                <td class="agenda-time">
-                                    17:30
-                                </td>
-                                <td class="agenda-events">
-                                    <div class="agenda-event">
-                                        <!--
-                                        <i class="glyphicon glyphicon-repeat text-muted" title="Repeating event"></i> 
-                                        -->
-                                        Evento 1
-                                    </div>
-                                </td>
-                            </tr>
-                            
-                            <!-- Multiple events in a single day (note the rowspan) -->
-                            <tr>
-                                <td class="agenda-date" class="active" rowspan="3">
-                                    <div class="dayofmonth">26</div>
-                                    <div class="dayofweek">Terça - Feira</div>
-                                    <div class="shortdate text-muted">Julho, 2017</div>
-                                </td>
-                                <td class="agenda-time">
-                                    17:00
-                                </td>
-                                <td class="agenda-events">
-                                    <div class="agenda-event">
-                                        Evento X
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="agenda-time">
-                                    19:00
-                                </td>
-                                <td class="agenda-events">
-                                    <div class="agenda-event">
-                                        Palestra
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="agenda-time">
-                                    21:00
-                                </td>
-                                <td class="agenda-events">
-                                    <div class="agenda-event">
-                                        Capacitação Y
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="agenda">
+                    <div class="table-responsive">
+                        <table class="table table-condensed table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Dia</th>
+                                    <th>Horário</th>
+                                    <th>Evento</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Single event in a single day -->
+                                <tr>
+                                    <td class="agenda-date active" rowspan="1">
+                                        <div class="dayofmonth">25</div>
+                                        <div class="dayofweek">Segunda - Feira</div>
+                                        <div class="shortdate text-muted">Julho, 2017</div>
+                                    </td>
+                                    <td class="agenda-time">
+                                        17:30
+                                    </td>
+                                    <td class="agenda-events">
+                                        <div class="agenda-event">
+                                            <!--
+                                            <i class="glyphicon glyphicon-repeat text-muted" title="Repeating event"></i> 
+                                            -->
+                                            Evento 1
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Multiple events in a single day (note the rowspan) -->
+                                <tr>
+                                    <td class="agenda-date" class="active" rowspan="3">
+                                        <div class="dayofmonth">26</div>
+                                        <div class="dayofweek">Terça - Feira</div>
+                                        <div class="shortdate text-muted">Julho, 2017</div>
+                                    </td>
+                                    <td class="agenda-time">
+                                        17:00
+                                    </td>
+                                    <td class="agenda-events">
+                                        <div class="agenda-event">
+                                            Evento X
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="agenda-time">
+                                        19:00
+                                    </td>
+                                    <td class="agenda-events">
+                                        <div class="agenda-event">
+                                            Palestra
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="agenda-time">
+                                        21:00
+                                    </td>
+                                    <td class="agenda-events">
+                                        <div class="agenda-event">
+                                            Capacitação Y
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
-        </section><!--/.col-xs-12.col-sm-9-->
+            </section>
+        </div> <!--/.col-xs-12.col-sm-9-->
 
         <div class="col-xs-6 col-sm-3 col-lg-2 sidebar-offcanvas" id="sidebar">
           <div w3-include-html="/WebSiteDIN/components/sidebar.html"></div>
