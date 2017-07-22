@@ -47,559 +47,699 @@
     <div w3-include-html="/WebSiteDIN/components/my-nav.html"></div>
     
     <div class="container content">
+      <div class="row">
+      
+        <ol class="breadcrumb pull-left">
+          <li class="breadcrumb-item"><a href="/WebSiteDIN/">Home</a></li>
+          <li class="breadcrumb-item active">Pós-Graduação</li>
+          <li class="breadcrumb-item active"><strong>Mestrado</strong></li>
+        </ol>
+        
+        <div class="pull-right visible-xs">
+          <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Menu Lateral</button>
+        </div>
+      </div>
 
       <div class="row row-offcanvas row-offcanvas-right">
-
         <div class="col-xs-12 col-sm-9 col-lg-10">
-          <p class="pull-right visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Menu Lateral</button>
-          </p>
+          <div class="tabbable"> <!-- Only required for left/right tabs -->
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#apresentacao" data-toggle="tab">Apresentação</a></li>
+              <li><a href="#curso" data-toggle="tab">Curso</a></li>
+              <li><a href="#infraestrutura" data-toggle="tab">Infraestrutura</a></li>
+              <li><a href="#linha" data-toggle="tab">Linhas de Pesquisa</a></li>
+            </ul>
+            <div class="tab-content">
 
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/WebSiteDIN/">Home</a></li>
-            <li class="breadcrumb-item" style="color: #337ab7">Graduação</li>
-            <li class="breadcrumb-item active"><b>Ciência da Computação</b></li>
-          </ol>
+              <!--  APRESENTACAO -->
+              <div class="tab-pane active" id="apresentacao">
+                <section class="content-section">
+                  <h2>Apresentação</h2> 
+                  <p>
+                    Maringá, localizada no noroeste do Paraná é conhecida pelo seu verde intenso nas ruas e avenidas. A cidade oferece excelente qualidade de vida e infraestrutura. </br> </br>
+                    Dentro deste contexto, a Universidade Estadual de Maringá (UEM) desponta como um pólo cultural e tecnológico de toda uma região que atinge 109 municípios das microregiões de Maringá, Paranavaí, Umuarama, Campo Mourão e Apucarana. </br> </br>
+                    O programa de Pós-graduação em Ciência da Computação (PCC) está vinculado ao Departamento de Informática (DIN), que pertence ao Centro de Tecnologia. O DIN oferece: um curso de pós-graduação strictu sensu em Ciência da Computação – mestrado; dois cursos de graduação: Ciência da Computação e Informática e um curso de pós-graduação lato sensu em Desenvolvimento de Sistemas para Web. </br> </br>
+                    O curso de mestrado em Ciência da Computação é reconhecido pela CAPES, com conceito 3. Teve seu início no ano de 2002, tendo titulado 176 mestres até março de 2017.
+                  </p> 
 
+                  <h3>Objetivos</h3>
+                  <ul>
+                    <li style="padding: 5px">
+                      Proporcionar ao discente graduado aprofundamento ao saber na área de Computação, que lhe permita alcançar alto padrão de competência científica ou técnico-profissional;
+                    </li>
+                    <li style="padding: 5px">
+                      Oferecer, dentro da UEM, ambiente e recursos adequados para o desenvolvimento da pesquisa científica na área de Computação;
+                    </li>
+                    <li style="padding: 5px">
+                      Formar pessoal qualificado para o exercício de atividades de magistério superior na área de Computação;
+                    </li>
+                    <li style="padding: 5px">
+                      Preparar pesquisadores que propiciem o desenvolvimento tecnológico na área de Computação;
+                    </li>
+                    <li style="padding: 5px">
+                      Formar profissionais altamente qualificados na área de Computação.
+                    </li>
+                  </ul>
+                </section>
+              </div>
 
-          <div class="jumbotron">
-            <h2>Ciência da Computação</h2>
-            
+              <!-- CURSO -->
+              <div class="tab-pane" id="curso">
+                <section class="content-section">
+                  <h2>Curso</h2> 
+
+                  <h3>Estrutura Curricular</h3>
+                  <p>
+                    As disciplinas do curso de Mestrado em Ciência da Computação ora proposto deverão ser cursadas pelos alunos conforme sua área de interesse e escolhidas de comum acordo com o orientador de estudos de cada um. </br> </br> 
+                    A integralização de créditos dar-se-á quando o aluno totalizar 24 créditos. Cada crédito corresponde a 15 horas-aula.
+                  </p>
+
+                  <h3>Regulamento do Curso</h3>
+                  <p>
+                    Informações sobre o regulamento do curso podem ser obtidas na Resolução nº 141/2014-CI/CTC (turma de 2015) e na Resolução nº 036/2016-CI/CTC (turmas de 2016 e 1 de 2017) para turmas a partir de 2 de 2017 aguardar adequações.
+                  </p>
+
+                  <h3>Coordenação</h3>
+                  <ul>
+                    <li>Coordenador: Prof. Dr. Nardênio Almeida Martins</li>
+                    <li>Coordenador Adjunto: Prof. Dr. Edson Alves de Oliveira Júnior</li>
+                  </ul>
+
+                  <h3>Disciplinas</h3>
+
+                  <!-- OBRIGATORIAS -->
+                  <div class="panel-group">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" data-toggle="collapse" href="#obrig">
+                        <h4 class="panel-title">
+                          <i style="" class="fa fa-chevron-down" aria-hidden="true"></i>  
+                          <a data-toggle="collapse" href="#obrig">Obrigatórias </a>
+                        </h4>
+                      </div>
+                      <div id="obrig" class="panel-collapse collapse">
+                        <div class="table-responsive">
+
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th style="width: 10%; text-align: center;">Cod.</th>
+                                <th style="width: 50%">Disciplina</th>
+                                <th style="width: 10%">Créditos</th>
+                                <th style="width: 30%; text-align: center;"" colspan="2">Arquivos</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4038</td>
+                                <td style="width: 50%">Estágio de Docência</td>
+                                <td style="width: 10%; text-align: center;">4</td>
+                                <td style="width: 15%; text-align: right;">
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4056</td>
+                                <td style="width: 50%">Estudos Dirigidos de Dissertação</td>
+                                <td style="width: 10%; text-align: center;">0</td>
+                                <td style="width: 15%; text-align: right;">
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4060</td>
+                                <td style="width: 50%">Metodologia de Pesquisa em Computação</td>
+                                <td style="width: 10%; text-align: center;">1</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4061</td>
+                                <td style="width: 50%">Seminários Científicos</td>
+                                <td style="width: 10%; text-align: center;">1</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4059</td>
+                                <td style="width: 50%">Trabalho Individual</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- OPTATIVAS GRUPO 1-->
+                  <div class="panel-group">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" data-toggle="collapse" href="#opt1">
+                        <h4 class="panel-title">
+                          <i style="" class="fa fa-chevron-down" aria-hidden="true"></i>  
+                          <a data-toggle="collapse" href="#opt1">Optativas - Grupo I </a>
+                        </h4>
+                      </div>
+                      <div id="opt1" class="panel-collapse collapse">
+                        <div class="table-responsive">
+
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th style="width: 10%; text-align: center;">Cod.</th>
+                                <th style="width: 30%">Disciplina</th>
+                                <th style="width: 10%">Créditos</th>
+                                <th style="width: 30%; text-align: center;"" colspan="2">Arquivos</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4062</td>
+                                <td style="width: 50%">Projeto e Análise de Algoritmos</td>
+                                <td style="width: 10%; text-align: center;">4</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4048</td>
+                                <td style="width: 50%">Teoria da Computação</td>
+                                <td style="width: 10%; text-align: center;">4</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- OPTATIVAS GRUPO 1-->
+                  <div class="panel-group">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" data-toggle="collapse" href="#opt2">
+                        <h4 class="panel-title">
+                          <i style="" class="fa fa-chevron-down" aria-hidden="true"></i>  
+                          <a data-toggle="collapse" href="#opt2">Optativas - Grupo II </a>
+                        </h4>
+                      </div>
+                      <div id="opt2" class="panel-collapse collapse">
+                        <div class="table-responsive">
+
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th style="width: 10%; text-align: center;">Cod.</th>
+                                <th style="width: 30%">Disciplina</th>
+                                <th style="width: 10%">Créditos</th>
+                                <th style="width: 30%; text-align: center;"" colspan="2">Arquivos</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4069</td>
+                                <td style="width: 50%">Algoritmos em Grafos</td>
+                                <td style="width: 10%; text-align: center;">4</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4035</td>
+                                <td style="width: 50%">Arquitetura de Computadores</td>
+                                <td style="width: 10%; text-align: center;">4</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4063</td>
+                                <td style="width: 50%">Engenharia de Software</td>
+                                <td style="width: 10%; text-align: center;">4</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4041</td>
+                                <td style="width: 50%">Linguagens de Programação</td>
+                                <td style="width: 10%; text-align: center;">4</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4047</td>
+                                <td style="width: 50%">Sistemas Operacionais</td>
+                                <td style="width: 10%; text-align: center;">4</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ELETIVA IC-->
+                  <div class="panel-group">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" data-toggle="collapse" href="#eletic">
+                        <h4 class="panel-title">
+                          <i style="" class="fa fa-chevron-down" aria-hidden="true"></i>  
+                          <a data-toggle="collapse" href="#eletic">Eletivas - Inteligência Computacional </a>
+                        </h4>
+                      </div>
+                      <div id="eletic" class="panel-collapse collapse">
+                        <div class="table-responsive">
+
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th style="width: 10%; text-align: center;">Cod.</th>
+                                <th style="width: 30%">Disciplina</th>
+                                <th style="width: 10%">Créditos</th>
+                                <th style="width: 30%; text-align: center;"" colspan="2">Arquivos</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4034</td>
+                                <td style="width: 50%">Aprendizagem de Máquina</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4070</td>
+                                <td style="width: 50%">Meta-heurísticas para Otimização Combinatória</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4064</td>
+                                <td style="width: 50%">Processamento Digital de Imagens</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4071</td>
+                                <td style="width: 50%">Tópicos em Inteligência Computacional I</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4072</td>
+                                <td style="width: 50%">Tópicos em Inteligência Computacional II</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4073</td>
+                                <td style="width: 50%">Tópicos em Inteligência Computacional III</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4074</td>
+                                <td style="width: 50%"><i>Topics in Computacional Intelligence</i></td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- ELETIVA SI-->
+                  <div class="panel-group">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" data-toggle="collapse" href="#eletsi">
+                        <h4 class="panel-title">
+                          <i style="" class="fa fa-chevron-down" aria-hidden="true"></i>  
+                          <a data-toggle="collapse" href="#eletsi">Eletivas - Sistemas de Informação </a>
+                        </h4>
+                      </div>
+                      <div id="eletsi" class="panel-collapse collapse">
+                        <div class="table-responsive">
+
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th style="width: 10%; text-align: center;">Cod.</th>
+                                <th style="width: 30%">Disciplina</th>
+                                <th style="width: 10%">Créditos</th>
+                                <th style="width: 30%; text-align: center;"" colspan="2">Arquivos</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4036</td>
+                                <td style="width: 50%">Banco de Dados</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4066</td>
+                                <td style="width: 50%">Engenharia de Software Experimental</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4040</td>
+                                <td style="width: 50%">Interação Humano-Computador</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4067</td>
+                                <td style="width: 50%">Métodos Avançados de Desenvolvimento de Software</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4052</td>
+                                <td style="width: 50%">Tópicos em Sistemas de Informação I</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4053</td>
+                                <td style="width: 50%">Tópicos em Sistemas de Informação II</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4054</td>
+                                <td style="width: 50%">Tópicos em Sistemas de Informação I</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4075</td>
+                                <td style="width: 50%"><i>Experimentation in Software Engineering</i></td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ELETIVA SC-->
+                  <div class="panel-group">
+                    <div class="panel panel-default">
+                      <div class="panel-heading" data-toggle="collapse" href="#eletsc">
+                        <h4 class="panel-title">
+                          <i style="" class="fa fa-chevron-down" aria-hidden="true"></i>  
+                          <a data-toggle="collapse" href="#eletsc">Eletivas - Sistemas de Computação </a>
+                        </h4>
+                      </div>
+                      <div id="eletsc" class="panel-collapse collapse">
+                        <div class="table-responsive">
+
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th style="width: 10%; text-align: center;">Cod.</th>
+                                <th style="width: 30%">Disciplina</th>
+                                <th style="width: 10%">Créditos</th>
+                                <th style="width: 30%; text-align: center;"" colspan="2">Arquivos</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4065</td>
+                                <td style="width: 50%">Programação Concorrente</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4059</td>
+                                <td style="width: 50%">Redes de Computadores</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4049</td>
+                                <td style="width: 50%">Tópicos em Sistemas de Computação I</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4050</td>
+                                <td style="width: 50%">Tópicos em Sistemas de Computação II</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4051</td>
+                                <td style="width: 50%">Tópicos em Sistemas de Computação I</td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td style="width: 10%; text-align: center;">DIN4076</td>
+                                <td style="width: 50%"><i>Topics in Computer Systems</i></td>
+                                <td style="width: 10%; text-align: center;">2</td>
+                                <td style="width: 15%; text-align: right;">
+                                  <a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td> 
+                                <td style="width: 15%; text-align: center;">
+                                  <a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </section>
+              </div>
+
+              <!--  INFRA -->
+              <div class="tab-pane" id="infraestrutura">
+                <section class="content-section">
+                  <h2>Infraestrutura</h2> 
+
+                  <h3>Instalações</h3>
+                  <p>
+                    O Departamento de Informática (DIN)  e o Programa de Pós-Graduação em Ciência da Computação (PCC) ocupam o Bloco C56.
+                  </p> 
+
+                  <h3>Salas de Aulas</h3>
+                  <p>
+                    O DIN possui três salas de aula próprias, todas com sistemas de projeção conectados a computadores em rede. As disciplinas de graduação utilizam salas de aulas que são compartilhadas com os demais cursos da UEM.
+                    </br> </br>
+                    O PCC possui duas salas de projeção.
+                  </p>
+
+                  <h3>Auditório</h3>
+                  <p>
+                    O Departamento de Informática possui um auditório  e um anfiteatro. Além disso, o Centro de Tecnologia possui dois auditórios que podem ser utilizados por seus departamentos.
+                  </p>
+
+                  <h3>Secretaria</h3>
+                  <p>
+                    O curso de mestrado conta com uma secretaria exclusiva.
+                  </p>
+
+                  <h3>Sala de Professores</h3>
+                  <p>
+                    O Departamento de Informática acomoda seus professores em salas equipadas com computadores individuais conectados em rede.
+                  </p>
+
+                  <h3>Laboratórios</h3>
+                  <ul>
+                    <li style="padding: 5px 0px">Laboratório de Engenharia de Algoritmo – LEAL; </li>
+                    <li style="padding: 5px 0px">Laboratório de Sistemas Interativos Inteligentes – LSII;</li>
+                    <li style="padding: 5px 0px">Laboratório de Engenharia de Software – LES; </li>
+                    <li style="padding: 5px 0px">Laboratório de Gestão de Dados – LGD;</li>
+                    <li style="padding: 5px 0px">Laboratório de Tecnologia de Informação – LTI;</li>
+                    <li style="padding: 5px 0px">Laboratório de Desenvolvimento Distribuído de Software – LDDS;</li>
+                    <li style="padding: 5px 0px">Laboratório Experimental de Computação de Alto Desempenho – LECAD;</li>
+                    <li style="padding: 5px 0px">Laboratório de Linguagens, Compiladores e Programação Paralela – LCP;</li>
+                    <li style="padding: 5px 0px">Laboratório de Sistemas Embarcados e de Processamento de Sinais – LASEPS;</li>
+                    <li style="padding: 5px 0px">Laboratório de Segurança da Informação - LASI;</li>
+                    <li style="padding: 5px 0px">Laboratório de Engenharia de Computação Ubíqua e Autonômica - MANNA;</li>
+                    <li style="padding: 5px 0px">Laboratório de Ensino e Pesquisa de Computação Gráfica e de Processamento de Imagens;</li>
+                    <li style="padding: 5px 0px">Laboratório de Informática - LIN;</li>
+                    <li style="padding: 5px 0px">Laboratório do Mestrado.</li>
+                  </ul>
+                </section>
+              </div>
+
+              <!--  LINHAS -->
+              <div class="tab-pane" id="linha">
+                <section class="content-section">
+                  <h2>Linhas de Pesquisa</h2> 
+
+                  <h3>Inteligência Computacional</h3>
+                  <p>
+                    Esta linha envolve pesquisa de técnicas de inteligência computacional para desenvolvimento de sistemas de apoio à decisão aplicados em problemas reais. Abrange: computação evolutiva, aprendizagem de máquina, processamento de linguagem natural, processamento de imagem, algoritmos bio-inspirados, robótica, modelagem, controle, navegação, visão computacional, otimização aplicada, lógica nebulosa, reconhecimento de padrões, pesquisa operacional,  deep learning, sistemas de recomendação, personalização de sites Web e mineração de dados da Web.
+                  </p>
+
+                  <h3>Sistemas de Computação</h3>
+                  <p>
+                    Esta linha envolve de forma conjunta o estudo e o desenvolvimento de algoritmos e arquiteturas para apoiar a criação de sistemas de computação, enfatizando a produção de sistemas otimizados, arquiteturas eficientes, e/ou sistemas que possam apresentar algum grau de autonomia. Esta linha abrange os contextos de programação paralela, computação autonômica, arquitetura de computadores, compiladores, linguagens de programação, redes sem fio, sistemas embarcados e redes de computadores.
+                  </p>
+
+                  <h3>Sistemas de Informação</h3>
+                  <p>
+                    Esta linha envolve investigações sobre técnicas de apoio à produção de software, enfatizando a melhoria da qualidade de produtos e de processos. A linha tem como objetivo fornecer ao pesquisador um sólido conhecimento técnico em sistemas de informação, capacitando-o a analisar, propor soluções e gerenciar o processo de construção e adoção de sistemas informatizados em ambiente de trabalho, ensino e aprendizagem. Esta linha abrange métodos avançados de engenharia de software, linha de produto de software, educação em engenharia de software, desenvolvimento distribuído de software, desenvolvimento de software livre, gerência de projetos de software, melhoria de processo de software e mineração de repositórios de software.
+                  </p>
+                </section>
+              </div>
+            </div>
           </div>
-
-          <div class="row col-xs-12">
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <div class="panel-titke"><h5>Informações</h5></div>
-              </div>
-              <div class="panel-body">
-                <b>Turno:</b> Integral </br>
-                <b>Grau:</b> Bacharelado em Ciência da Computação </br>
-                <b>Coordenador:</b> <a href="/WebSiteDIN/pessoas/pessoa1.html">Yandre Maldonado e Gomes da Costa</a> </br>
-                <b>Matriz Curricular:</b>
-                  <a href="/WebSiteDIN/graduacao/ciencia_computacao/matriz_curricular.html">Acesse aqui!</a> </br>
-                <b>Atividades Acadêmicas Complementares:</b> 206 horas</br>
-                <b>Prazo para conclusão:</b> </br> 
-                <div style="padding: 0px 15px">Mínimo: 5 anos</br></div> 
-                <div style="padding: 0px 15px">Máximo: 9 anos</div>
-              </div>
-            </div>
-
-            <!-- -->
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <div class="panel-titke"><h5>Matriz Curricular</h5></div>
-              </div>
-              <div class="panel-body">
-                <div class="panel-group">
-                  <div class="panel panel-default">
-                    <div class="panel-heading" data-toggle="collapse" href="#1ano">
-                      <h4 class="panel-title">
-                        <i style="" class="fa fa-arrow-down" aria-hidden="true"></i>  
-                        <a data-toggle="collapse" href="#1ano">1º Ano</a>
-                      </h4>
-                    </div>
-                    <div id="1ano" class="panel-collapse collapse">
-                      <div class="table-responsive">
-                        <table class="table table-striped">
-                          <thead>
-                            <tr>
-                              <th colspan="4" style="padding: 0px 15px"><h5>1º Semestre</h5></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td style="width: 10%">6870</td>
-                              <td style="width: 60%">Cálculo Diferencial e Integral I</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6871</td>
-                              <td style="width: 60%">Geometria Analítica</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6872</td>
-                              <td style="width: 60%">Fundamentos de Eletrônica</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6873</td>
-                              <td style="width: 60%">Matemática Discreta I</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6874</td>
-                              <td style="width: 60%">Fundamentos de Tecnologia da Informação</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6875</td>
-                              <td style="width: 60%">Fundamentos da Pesquisa em Informática</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div class="table-responsive">
-                        <table class="table table-striped">
-                          <thead>
-                            <tr>
-                              <th colspan="4" style="padding: 0px 15px"><h5>2º Semestre</h5></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td style="width: 10%">6876</td>
-                              <td style="width: 60%">Álgebra Linear</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6877</td>
-                              <td style="width: 60%">Cálculo Diferencial e Integral II</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6878</td>
-                              <td style="width: 60%">Circuitos Digitais I</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6879</td>
-                              <td style="width: 60%">Fundamentos de Algoritmos</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6880</td>
-                              <td style="width: 60%">Matemática Discreta II</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel-group">
-                  <div class="panel panel-default">
-                    <div class="panel-heading" data-toggle="collapse" href="#2ano">
-                      <h4 class="panel-title">
-                        <i style="" class="fa fa-arrow-down" aria-hidden="true"></i>  
-                        <a data-toggle="collapse" href="#2ano">2º Ano</a>
-                      </h4>
-                    </div>
-                    <div id="2ano" class="panel-collapse collapse">
-                      <div class="table-responsive">
-                        <table class="table table-striped">
-                          <thead>
-                            <tr>
-                              <th colspan="4" style="padding: 0px 15px"><h5>1º Semestre</h5></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td style="width: 10%">6881</td>
-                              <td style="width: 60%">Probabilidade e Estatística</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6882</td>
-                              <td style="width: 60%">Circuitos Digitais II</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6883</td>
-                              <td style="width: 60%">Linguagens Formais e Autômatos</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6884</td>
-                              <td style="width: 60%">Estrutura de Dados</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6885</td>
-                              <td style="width: 60%">Processo de Software e Engenharia de Requisitos</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6886</td>
-                              <td style="width: 60%">Psicologia e Relações do Trabalho</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div class="table-responsive">
-                        <table class="table table-striped">
-                          <thead>
-                            <tr>
-                              <th colspan="4" style="padding: 0px 15px"><h5>2º Semestre</h5></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td style="width: 10%">6887</td>
-                              <td style="width: 60%">Arquitetura e Organizações de Computadores I</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6888</td>
-                              <td style="width: 60%">Paradigma de Programação Imperativa e Orientada a Objetos</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6889</td>
-                              <td style="width: 60%">Projeto e Análise de Algoritmos</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6890</td>
-                              <td style="width: 60%">Interação Ser Humano e Computador</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6891</td>
-                              <td style="width: 60%">Análise de Sistemas de Software</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6892</td>
-                              <td style="width: 60%">Banco de Dados I</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel-group">
-                  <div class="panel panel-default">
-                    <div class="panel-heading" data-toggle="collapse" href="#3ano">
-                      <h4 class="panel-title">
-                        <i style="" class="fa fa-arrow-down" aria-hidden="true"></i>  
-                        <a data-toggle="collapse" href="#3ano">3º Ano</a>
-                      </h4>
-                    </div>
-                    <div id="3ano" class="panel-collapse collapse">
-                      <div class="table-responsive">
-                        <table class="table table-striped">
-                          <thead>
-                            <tr>
-                              <th colspan="4" style="padding: 0px 15px"><h5>1º Semestre</h5></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td style="width: 10%">6893</td>
-                              <td style="width: 60%">Processos Estocásticos</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6894</td>
-                              <td style="width: 60%">Programação para Interfaceamento de Hardware e Software</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6895</td>
-                              <td style="width: 60%">Arquitetura e Organização de Computadores II</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6896</td>
-                              <td style="width: 60%">Computabilidade</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6897</td>
-                              <td style="width: 60%">Organização e Recuperação de Dados</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6898</td>
-                              <td style="width: 60%">Algoritmos em Grafos</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6899</td>
-                              <td style="width: 60%">Projetos de Sistemas de Software</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div class="table-responsive">
-                        <table class="table table-striped">
-                          <thead>
-                            <tr>
-                              <th colspan="4" style="padding: 0px 15px"><h5>1º Semestre</h5></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td style="width: 10%">6900</td>
-                              <td style="width: 60%">Matemática Computacional</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6901</td>
-                              <td style="width: 60%">Sistemas Operacionais</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6902</td>
-                              <td style="width: 60%">Paradigma de Programação Lógica e Funcional</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6903</td>
-                              <td style="width: 60%">Modelagem e Otimização Algorítmica</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6904</td>
-                              <td style="width: 60%">Implementação de Sistemas de Software</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6905</td>
-                              <td style="width: 60%">Sociologia</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel-group">
-                  <div class="panel panel-default">
-                    <div class="panel-heading" data-toggle="collapse" href="#4ano">
-                      <h4 class="panel-title">
-                        <i style="" class="fa fa-arrow-down" aria-hidden="true"></i>  
-                        <a data-toggle="collapse" href="#4ano">4º Ano</a>
-                      </h4>
-                    </div>
-                    <div id="4ano" class="panel-collapse collapse">
-                      <div class="table-responsive">
-                        <table class="table table-striped">
-                          <thead>
-                            <tr>
-                              <th colspan="4" style="padding: 0px 15px"><h5>1º Semestre</h5></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td style="width: 10%">6906</td>
-                              <td style="width: 60%">Computação Gráfica</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6907</td>
-                              <td style="width: 60%">Redes de Computadores</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6908</td>
-                              <td style="width: 60%">Programação Concorrente</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6909</td>
-                              <td style="width: 60%">Inteligência Artificial I</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6910</td>
-                              <td style="width: 60%">Banco de Dados II</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6911</td>
-                              <td style="width: 60%">Noções de Direito</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6912</td>
-                              <td style="width: 60%">Gerenciamento de Projetos de Software</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div class="table-responsive">
-                        <table class="table table-striped">
-                          <thead>
-                            <tr>
-                              <th colspan="4" style="padding: 0px 15px"><h5>2º Semestre</h5></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td style="width: 10%">6913</td>
-                              <td style="width: 60%">Sistemas Digitais</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6914</td>
-                              <td style="width: 60%">Implementações de Linguagens de Programação</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6915</td>
-                              <td style="width: 60%">Inteligência Artificial II</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6916</td>
-                              <td style="width: 60%">Métodos Formais</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6917</td>
-                              <td style="width: 60%">Trabalho de Conclusão de Curso I</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="panel-group">
-                  <div class="panel panel-default">
-                    <div class="panel-heading" data-toggle="collapse" href="#5ano">
-                      <h4 class="panel-title">
-                        <i style="" class="fa fa-arrow-down" aria-hidden="true"></i>  
-                        <a data-toggle="collapse" href="#5ano">5º Ano</a>
-                      </h4>
-                    </div>
-                    <div id="5ano" class="panel-collapse collapse">
-                      <div class="table-responsive">
-                        <table class="table table-striped">
-                          <thead>
-                            <tr>
-                              <th colspan="4" style="padding: 0px 15px"><h5>1º Semestre</h5></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td style="width: 10%">6918</td>
-                              <td style="width: 60%">Processamento Digital de Sinais e Imagens</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6919</td>
-                              <td style="width: 60%">Gerenciamento de Redes de Computadores</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6920</td>
-                              <td style="width: 60%">Sistemas Distribuídos</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6921</td>
-                              <td style="width: 60%">Sistemas Hipermídia e Multimídia</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6922</td>
-                              <td style="width: 60%">Trabalho de Conclusão de Curso II</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                            <tr>
-                              <td style="width: 10%">6923</td>
-                              <td style="width: 60%">Informática e Sociedade</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div class="table-responsive">
-                        <table class="table table-striped">
-                          <thead>
-                            <tr>
-                              <th colspan="4" style="padding: 0px 15px"><h5>2º Semestre</h5></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td style="width: 10%">6924</td>
-                              <td style="width: 60%">Estágio Curricular Supervisionado</td>
-                              <td style="width: 15%"><a href="">Ementa <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td> 
-                              <td style="width: 15%"><a href="">Critério <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- -->
-          </div><!--/row-->
-          
-        </div><!--/.col-xs-12.col-sm-9-->
-
+        </div>
         <div class="col-xs-6 col-sm-3 col-lg-2 sidebar-offcanvas" id="sidebar">
-          
           <div w3-include-html="/WebSiteDIN/components/sidebar.html"></div>
         </div><!--/.sidebar-offcanvas-->
 
