@@ -1,12 +1,12 @@
-html {
+/*html {
   position: relative;
   min-height: 100%;
-}
+}*/
 
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-bottom: 110px; /*footer's height=80 + margin-top=30*/
+  /*margin-bottom: 110px;*/ /*footer's height=80 + margin-top=30*/
   background-color: #effcff;
 }
 
@@ -25,6 +25,19 @@ h6 {
   background-color: transparent;
   margin-bottom: 10px;
   margin-left: 20px;
+}
+
+
+.sidebar i.fa {
+  padding-right: 20px;
+}
+
+.sidebar i.glyphicon {
+  padding-right: 7px;
+}
+
+.sidebar-imgs img {
+  margin-bottom: 15px;
 }
 
 /*
@@ -170,12 +183,34 @@ header .logo-text .h2 {
 */
 
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
+  /*position: absolute;*/
+  /*bottom: 0;*/
+  /*width: 100%;*/
+  /*height: 100px;*/
+  margin-top: 20px;
   background-color: #1a1a1a;
   color: #555;
+  padding: 15px 0;
+}
+
+footer a img {
+  opacity: 0.5;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+footer a:hover img {
+  opacity: 0.8;
+}
+
+footer .footer-text p {
+  margin-bottom: 5px;
+}
+
+footer .footer-text {
+  text-align: center;
+  margin-top: 15px;
 }
 
 
