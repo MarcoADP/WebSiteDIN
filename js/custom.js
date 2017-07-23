@@ -14,13 +14,29 @@ function menu_scroll() {
 
     document.onscroll = scroll;
 
+
+    function autoHeight() {
+        $(document.body).css("height", "");
+        if( document.body.offsetHeight < $(window).height() ) {
+            $(document.body).css("height", "100%");
+        }
+    }
+
+    autoHeight()
+    $(window).resize(function() {
+        autoHeight()
+    });
+
+    window.onmousewheel = autoHeight;
+
+
+
     // $('ul.nav li.dropdown').hover(function() {
     //   $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeIn(300);
     // }, function() {
     //   $(this).find('.dropdown-menu').stop(true, true).delay(0).fadeOut(300);
     // });
 }
-
 
 
 // $(document).ready(function () {

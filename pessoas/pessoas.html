@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="/WebSiteDIN/img/favicon.ico">
 
     <title>Departamento de Informática - UEM</title>
 
@@ -23,142 +23,143 @@
   </head>
 
   <body>
+    <div id="wrapper">
+      <header>
+        <div class="container">
+          <div class="logo"><a href="#"><img class="img-responsive" src="/WebSiteDIN/img/logo-din2.png"></a></div>
+            
+          <!-- <div class="logo-text">
+            <div class="h2">Departamento de</div>
+            <div class="h1">Informática</div>
+          </div> -->
 
-    <header>
-      <div class="container">
-        <div class="logo"><a href="#"><img class="img-responsive" src="/WebSiteDIN/img/logo-din2.png"></a></div>
+          <div class="pull-right">
+            <form id="search">
+              <div class="form-group has-feedback has-feedback-left">
+                <input type="search" placeholder="Pesquisar">
+                <i class="fa fa-search fa-lg search-icon form-control-feedback" aria-hidden="true"></i>
+             </div>
+            </form>
+          </div>
+        </div>
+      </header>
+
+      <div w3-include-html="/WebSiteDIN/components/my-nav.html"></div>
+      
+      <div class="container content">
+        <div class="row">
+          <ol class="breadcrumb pull-left">
+            <li class="breadcrumb-item"><a href="/WebSiteDIN/">Home</a></li>
+            <li class="breadcrumb-item active"><strong>Pessoas</strong></li>
+          </ol>
           
-        <!-- <div class="logo-text">
-          <div class="h2">Departamento de</div>
-          <div class="h1">Informática</div>
-        </div> -->
-
-        <div class="pull-right">
-          <form id="search">
-            <div class="form-group has-feedback has-feedback-left">
-              <input type="search" placeholder="Pesquisar">
-              <i class="fa fa-search fa-lg search-icon form-control-feedback" aria-hidden="true"></i>
-           </div>
-          </form>
+          <div class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Menu Lateral</button>
+          </div>
         </div>
-      </div>
-    </header>
 
-    <div w3-include-html="/WebSiteDIN/components/my-nav.html"></div>
-    
-    <div class="container content">
-      <div class="row">
-        <ol class="breadcrumb pull-left">
-          <li class="breadcrumb-item"><a href="/WebSiteDIN/">Home</a></li>
-          <li class="breadcrumb-item active"><strong>Pessoas</strong></li>
-        </ol>
-        
-        <div class="pull-right visible-xs">
-          <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Menu Lateral</button>
-        </div>
-      </div>
+        <div class="row row-offcanvas row-offcanvas-right">
 
-      <div class="row row-offcanvas row-offcanvas-right">
+          <div class="col-xs-12 col-sm-9 col-lg-10">
+            <section class="content-section">
+              <h2>Pessoas</h2>
+              <p>Conheça quem são as pessoas que trabalham no nosso Departamento.</p>
+              <br>
 
-        <div class="col-xs-12 col-sm-9 col-lg-10">
-          <section class="content-section">
-            <h2>Pessoas</h2>
-            <p>Conheça quem são as pessoas que trabalham no nosso Departamento.</p>
-            <br>
-
-            <div class="panel-group">
-              <div class="panel panel-default">
-                <div class="panel-heading" data-toggle="collapse" href="#collapse1">
-                  <h4 class="panel-title">
-                    <i class="fa fa-chevron-down" aria-hidden="true"></i>  
-                    <a data-toggle="collapse" href="#collapse1">Docentes</a>
-                  </h4>
-                </div>
-                <div id="collapse1" class="panel-collapse collapse">
-                  <ul class="list-group">
-                    <li class="list-group-item"><h5>Em atividade no Departamento</h5></li>
-                    <li class="list-group-item">Professor 1</li>
-                    <li class="list-group-item">Professor 2</li>
-                    <li class="list-group-item">Professor 3</li>
-                  </ul>
-                  <ul class="list-group">
-                    <li class="list-group-item"><h5>Em outras atividades</h5></li>
-                    <li class="list-group-item">Professor 4</li>
-                    <li class="list-group-item">Professor 5</li>
-                  </ul>
+              <div class="panel-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading" data-toggle="collapse" href="#collapse1">
+                    <h4 class="panel-title">
+                      <i class="fa fa-chevron-down" aria-hidden="true"></i>  
+                      <a data-toggle="collapse" href="#collapse1">Docentes</a>
+                    </h4>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse">
+                    <ul class="list-group">
+                      <li class="list-group-item"><h5>Em atividade no Departamento</h5></li>
+                      <li class="list-group-item">Professor 1</li>
+                      <li class="list-group-item">Professor 2</li>
+                      <li class="list-group-item">Professor 3</li>
+                    </ul>
+                    <ul class="list-group">
+                      <li class="list-group-item"><h5>Em outras atividades</h5></li>
+                      <li class="list-group-item">Professor 4</li>
+                      <li class="list-group-item">Professor 5</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="panel-group">
-              <div class="panel panel-default">
-                <div class="panel-heading" data-toggle="collapse" href="#collapse2">
-                  <h4 class="panel-title">
-                    <i class="fa fa-chevron-down" aria-hidden="true"></i> 
-                    <a data-toggle="collapse" href="#collapse2">Servidores</a>
-                  </h4>
-                </div>
-                <div id="collapse2" class="panel-collapse collapse">
-                  <ul class="list-group">
-                    <li class="list-group-item">Servidor 1</li>
-                    <li class="list-group-item">Servidor 2</li>
-                    <li class="list-group-item">Servidor 3</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <div class="panel-group">
-              <div class="panel panel-default">
-                <div class="panel-heading" data-toggle="collapse" href="#collapse3">
-                  <h4 class="panel-title">
-                    <i class="fa fa-chevron-down" aria-hidden="true"></i> 
-                    <a data-toggle="collapse" href="#collapse3">Técnicos</a>
-                  </h4>
-                </div>
-                <div id="collapse3" class="panel-collapse collapse">
-                  <ul class="list-group">
-                    <li class="list-group-item">Técnico 1</li>
-                    <li class="list-group-item">Técnico 2</li>
-                    <li class="list-group-item">Técnico 3</li>
-                  </ul>
+              <div class="panel-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading" data-toggle="collapse" href="#collapse2">
+                    <h4 class="panel-title">
+                      <i class="fa fa-chevron-down" aria-hidden="true"></i> 
+                      <a data-toggle="collapse" href="#collapse2">Servidores</a>
+                    </h4>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse">
+                    <ul class="list-group">
+                      <li class="list-group-item">Servidor 1</li>
+                      <li class="list-group-item">Servidor 2</li>
+                      <li class="list-group-item">Servidor 3</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-            
-            <div class="panel-group">
-              <div class="panel panel-default">
-                <div class="panel-heading" data-toggle="collapse" href="#collapse4">
-                  <h4 class="panel-title">
-                    <i class="fa fa-chevron-down" aria-hidden="true"></i> 
-                    <a data-toggle="collapse" href="#collapse4"><i>In Memoriam</i></a>
-                  </h4>
-                </div>
-                <div id="collapse4" class="panel-collapse collapse">
-                  <ul class="list-group">
-                    <li class="list-group-item">Professor X</li>
-                    <li class="list-group-item">Técnico X</li>
-                    <li class="list-group-item">Técnico Y</li>
-                  </ul>
+              
+              <div class="panel-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading" data-toggle="collapse" href="#collapse3">
+                    <h4 class="panel-title">
+                      <i class="fa fa-chevron-down" aria-hidden="true"></i> 
+                      <a data-toggle="collapse" href="#collapse3">Técnicos</a>
+                    </h4>
+                  </div>
+                  <div id="collapse3" class="panel-collapse collapse">
+                    <ul class="list-group">
+                      <li class="list-group-item">Técnico 1</li>
+                      <li class="list-group-item">Técnico 2</li>
+                      <li class="list-group-item">Técnico 3</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
+              
+              <div class="panel-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading" data-toggle="collapse" href="#collapse4">
+                    <h4 class="panel-title">
+                      <i class="fa fa-chevron-down" aria-hidden="true"></i> 
+                      <a data-toggle="collapse" href="#collapse4"><i>In Memoriam</i></a>
+                    </h4>
+                  </div>
+                  <div id="collapse4" class="panel-collapse collapse">
+                    <ul class="list-group">
+                      <li class="list-group-item">Professor X</li>
+                      <li class="list-group-item">Técnico X</li>
+                      <li class="list-group-item">Técnico Y</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
-          </section>
-        </div><!--/.col-xs-12.col-sm-9-->
+            </section>
+          </div><!--/.col-xs-12.col-sm-9-->
 
-        <div class="col-xs-6 col-sm-3 col-lg-2 sidebar-offcanvas" id="sidebar">
-          <div w3-include-html="/WebSiteDIN/components/sidebar.html"></div>
-        </div><!--/.sidebar-offcanvas-->
+          <div class="col-xs-6 col-sm-3 col-lg-2 sidebar-offcanvas" id="sidebar">
+            <div w3-include-html="/WebSiteDIN/components/sidebar.html"></div>
+          </div><!--/.sidebar-offcanvas-->
 
-      </div><!--/row-->
+        </div><!--/row-->
 
 
-    </div><!--/.container-->
+      </div><!--/.container-->
 
-    <footer style="padding:10px 0px">
-      <div w3-include-html="/WebSiteDIN/components/footer.html"></div>
-    </footer>
+      <footer>
+        <div w3-include-html="/WebSiteDIN/components/footer.html"></div>
+      </footer>
+    </div>
     
 
     <!-- Bootstrap core JavaScript

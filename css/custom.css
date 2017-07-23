@@ -1,13 +1,28 @@
-/*html {
-  position: relative;
-  min-height: 100%;
-}*/
+html {
+  height: 100%;
+  margin: 0; padding: 0;  /* to avoid scrollbars */
+}
 
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /*margin-bottom: 110px;*/ /*footer's height=80 + margin-top=30*/
   background-color: #effcff;
+  margin: 0; padding: 0;  /* to avoid scrollbars */
+}
+
+
+@media (min-width: 768px) {
+  #wrapper {
+    display: flex;  /* use the flex model */
+    min-height: 100%;
+    flex-direction: column;
+  }
+
+  .content {
+    flex: 1;
+    /*margin-top: 20px;*/
+  }
 }
 
 h1,
@@ -22,7 +37,7 @@ h6 {
 }
 
 .breadcrumb {
-  background-color: transparent;
+  /*background-color: transparent;*/
   margin-bottom: 10px;
   margin-left: 20px;
 }
@@ -39,6 +54,7 @@ h6 {
 .sidebar-imgs img {
   margin-bottom: 15px;
 }
+
 
 /*
 * Header
@@ -87,10 +103,6 @@ header .logo-text .h2 {
   letter-spacing: 2px;
 }
 
-
-.content {
-  margin-top: 20px;
-}
 
 /*
 * Navbar
@@ -177,17 +189,31 @@ header .logo-text .h2 {
   text-align: justify;
 }
 
+/*
+* Button Primary
+*/
+
+.btn-primary {
+  background-color: transparent;
+  color: #3379b6;
+  border-color: #3379b6;
+  border-width: 2px;
+  transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #3379b6;
+  border-color: #3379b6;
+}
 
 /*
 * Footer
 */
 
 footer {
-  /*position: absolute;*/
-  /*bottom: 0;*/
-  /*width: 100%;*/
-  /*height: 100px;*/
-  margin-top: 20px;
+  margin-top: 25px;
   background-color: #1a1a1a;
   color: #555;
   padding: 15px 0;
@@ -310,11 +336,12 @@ input::-webkit-search-cancel-button {
 }
 
 /* ABAS */
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover {
   color: #fff;
   cursor: default;
-  background-color: #4080ff;
-  border: 1px solid #ddd;
-  border-bottom-color: transparent;
-
+  background-color: #3379b6;
+  border-width: 0;
 }
+

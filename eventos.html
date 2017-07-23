@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="/WebSiteDIN/img/favicon.ico">
 
     <title>Departamento de Informática - UEM</title>
 
@@ -23,139 +23,140 @@
   </head>
 
   <body>
+    <div id="wrapper">
+        <header>
+          <div class="container">
+            <div class="logo"><a href="#"><img class="img-responsive" src="/WebSiteDIN/img/logo-din2.png"></a></div>
+              
+            <!-- <div class="logo-text">
+              <div class="h2">Departamento de</div>
+              <div class="h1">Informática</div>
+            </div> -->
 
-    <header>
-      <div class="container">
-        <div class="logo"><a href="#"><img class="img-responsive" src="/WebSiteDIN/img/logo-din2.png"></a></div>
-          
-        <!-- <div class="logo-text">
-          <div class="h2">Departamento de</div>
-          <div class="h1">Informática</div>
-        </div> -->
+            <div class="pull-right">
+              <form id="search">
+                <div class="form-group has-feedback has-feedback-left">
+                  <input type="search" placeholder="Pesquisar">
+                  <i class="fa fa-search fa-lg search-icon form-control-feedback" aria-hidden="true"></i>
+               </div>
+              </form>
+            </div>
+          </div>
+        </header>
 
-        <div class="pull-right">
-          <form id="search">
-            <div class="form-group has-feedback has-feedback-left">
-              <input type="search" placeholder="Pesquisar">
-              <i class="fa fa-search fa-lg search-icon form-control-feedback" aria-hidden="true"></i>
-           </div>
-          </form>
-        </div>
-      </div>
-    </header>
-
-    <div w3-include-html="/WebSiteDIN/components/my-nav.html"></div>
-    
-    <div class="container content">
-      <div class="row">
-      
-        <ol class="breadcrumb pull-left">
-          <li class="breadcrumb-item"><a href="/WebSiteDIN/">Home</a></li>
-          <li class="breadcrumb-item active"><strong>Eventos</strong></li>
-        </ol>
+        <div w3-include-html="/WebSiteDIN/components/my-nav.html"></div>
         
-        <div class="pull-right visible-xs">
-          <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Menu Lateral</button>
-        </div>
-      </div>
+        <div class="container content">
+          <div class="row">
+          
+            <ol class="breadcrumb pull-left">
+              <li class="breadcrumb-item"><a href="/WebSiteDIN/">Home</a></li>
+              <li class="breadcrumb-item active"><strong>Eventos</strong></li>
+            </ol>
+            
+            <div class="pull-right visible-xs">
+              <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Menu Lateral</button>
+            </div>
+          </div>
 
-      <div class="row row-offcanvas row-offcanvas-right">
-      
-        <div class="col-xs-12 col-sm-9 col-lg-10">
-            <section class="content-section">
-              <h2>Agenda</h2>
-                <p class="lead">
-                    Confira todos os próximos eventos organizados e apoiados pelo Departamento de Informática!
-                </p>
+          <div class="row row-offcanvas row-offcanvas-right">
+          
+            <div class="col-xs-12 col-sm-9 col-lg-10">
+                <section class="content-section">
+                  <h2>Agenda</h2>
+                    <p class="lead">
+                        Confira todos os próximos eventos organizados e apoiados pelo Departamento de Informática!
+                    </p>
 
-                <hr />
+                    <hr />
 
-                <div class="agenda">
-                    <div class="table-responsive">
-                        <table class="table table-condensed table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>Dia</th>
-                                    <th>Horário</th>
-                                    <th>Evento</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Single event in a single day -->
-                                <tr>
-                                    <td class="agenda-date active" rowspan="1">
-                                        <div class="dayofmonth">25</div>
-                                        <div class="dayofweek">Segunda - Feira</div>
-                                        <div class="shortdate text-muted">Julho, 2017</div>
-                                    </td>
-                                    <td class="agenda-time">
-                                        17:30
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            <!--
-                                            <i class="glyphicon glyphicon-repeat text-muted" title="Repeating event"></i> 
-                                            -->
-                                            Evento 1
-                                        </div>
-                                    </td>
-                                </tr>
-                                
-                                <!-- Multiple events in a single day (note the rowspan) -->
-                                <tr>
-                                    <td class="agenda-date" class="active" rowspan="3">
-                                        <div class="dayofmonth">26</div>
-                                        <div class="dayofweek">Terça - Feira</div>
-                                        <div class="shortdate text-muted">Julho, 2017</div>
-                                    </td>
-                                    <td class="agenda-time">
-                                        17:00
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Evento X
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        19:00
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Palestra
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="agenda-time">
-                                        21:00
-                                    </td>
-                                    <td class="agenda-events">
-                                        <div class="agenda-event">
-                                            Capacitação Y
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="agenda">
+                        <div class="table-responsive">
+                            <table class="table table-condensed table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Dia</th>
+                                        <th>Horário</th>
+                                        <th>Evento</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Single event in a single day -->
+                                    <tr>
+                                        <td class="agenda-date active" rowspan="1">
+                                            <div class="dayofmonth">25</div>
+                                            <div class="dayofweek">Segunda - Feira</div>
+                                            <div class="shortdate text-muted">Julho, 2017</div>
+                                        </td>
+                                        <td class="agenda-time">
+                                            17:30
+                                        </td>
+                                        <td class="agenda-events">
+                                            <div class="agenda-event">
+                                                <!--
+                                                <i class="glyphicon glyphicon-repeat text-muted" title="Repeating event"></i> 
+                                                -->
+                                                Evento 1
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                    <!-- Multiple events in a single day (note the rowspan) -->
+                                    <tr>
+                                        <td class="agenda-date" class="active" rowspan="3">
+                                            <div class="dayofmonth">26</div>
+                                            <div class="dayofweek">Terça - Feira</div>
+                                            <div class="shortdate text-muted">Julho, 2017</div>
+                                        </td>
+                                        <td class="agenda-time">
+                                            17:00
+                                        </td>
+                                        <td class="agenda-events">
+                                            <div class="agenda-event">
+                                                Evento X
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="agenda-time">
+                                            19:00
+                                        </td>
+                                        <td class="agenda-events">
+                                            <div class="agenda-event">
+                                                Palestra
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="agenda-time">
+                                            21:00
+                                        </td>
+                                        <td class="agenda-events">
+                                            <div class="agenda-event">
+                                                Capacitação Y
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
-            </section>
-        </div> <!--/.col-xs-12.col-sm-9-->
+                </section>
+            </div> <!--/.col-xs-12.col-sm-9-->
 
-        <div class="col-xs-6 col-sm-3 col-lg-2 sidebar-offcanvas" id="sidebar">
-          <div w3-include-html="/WebSiteDIN/components/sidebar.html"></div>
-        </div><!--/.sidebar-offcanvas-->
+            <div class="col-xs-6 col-sm-3 col-lg-2 sidebar-offcanvas" id="sidebar">
+              <div w3-include-html="/WebSiteDIN/components/sidebar.html"></div>
+            </div><!--/.sidebar-offcanvas-->
 
-      </div><!--/row-->
+          </div><!--/row-->
 
 
-    </div><!--/.container-->
+        </div><!--/.container-->
 
-    <footer style="padding:10px 0px">
-      <div w3-include-html="/WebSiteDIN/components/footer.html"></div>
-    </footer>
+        <footer>
+          <div w3-include-html="/WebSiteDIN/components/footer.html"></div>
+        </footer>
+    </div>
     
 
     <!-- Bootstrap core JavaScript
