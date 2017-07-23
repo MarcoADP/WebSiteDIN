@@ -47,51 +47,127 @@
       <div w3-include-html="/WebSiteDIN/components/my-nav.html"></div>
       
       <div class="container content">
+        <div class="intro">
+          <div class="row">
+            <div class="col-xs-12 col-md-8">
+              <div id="carrossel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carrossel" data-slide-to="0" class="active"></li>
+                  <li data-target="#carrossel" data-slide-to="1"></li>
+                  <li data-target="#carrossel" data-slide-to="2"></li>
+                  <li data-target="#carrossel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <img src="/WebSiteDIN/img/slide-selos.png" alt="Selos dos cursos do DIN">
+                    <div class="carousel-caption">Selos dos cursos do DIN</div>
+                  </div>
+                  <div class="item">
+                    <img src="/WebSiteDIN/img/slide-maringa.png" alt="Maringá">
+                    <div class="carousel-caption">Maringá</div>
+                  </div>
+                  <div class="item">
+                    <img src="/WebSiteDIN/img/slide-din.png" alt="Bloco C56 - DIN">
+                    <div class="carousel-caption">Bloco C56 - DIN</div>
+                  </div>
+                  <div class="item">
+                    <img src="/WebSiteDIN/img/slide-lab.png" alt="Laboratório de Informática - DIN">
+                    <div class="carousel-caption">Laboratório de Informática - DIN</div>
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carrossel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="right carousel-control" href="#carrossel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Próximo</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-md-4">
+                <h2>Seja bem vindo!</h2>
+                <p>Este é o site do <strong>Departamento de Informática (DIN)</strong> da <strong>Universidade Estadual de Maringá (UEM)</strong>.</p>
+                <p>Atualmente o DIN é responsável por dois cursos de <a href="#">graduação</a> na área de Tecnologia de Informação, um curso de <a href="#">Mestrado em Ciência da Computação</a> e um curso de <a href="#">Especialização em Desenvolvimento de Sistemas para Web</a>, contando com um corpo docente constituído por doutores e mestres formados nas melhores instituições do país e do exterior.</p>
+                <!-- <p>Conheça mais sobre o departamento e as áreas de interesse de atuação dos docentes.  Informações adicionais podem ser obtidas pelos telefones: 3011-4324 e 3011-4219.</p> -->
+            </div>
+          </div>
+        </div>
 
         <div class="row row-offcanvas row-offcanvas-right">
 
           <div class="col-xs-12 col-sm-9 col-lg-10">
-            <p class="pull-right visible-xs">
-              <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Menu Lateral</button>
-            </p>
 
-            <div class="jumbotron">
-              <h1>Seja bem vindo!</h1>
-              <p>Este é o site do <strong>Departamento de Informática (DIN)</strong> da <strong>Universidade Estadual de Maringá (UEM)</strong>.</p>
-              <!-- <p>Atualmente o DIN é responsável por dois cursos de <a href="#">graduação</a> na área de Tecnologia de Informação, um curso de <a href="#">Mestrado em Ciência da Computação</a> e um curso de <a href="#">Especialização em Desenvolvimento de Sistemas para Web</a>, contando com um corpo docente constituído por doutores e mestres formados nas melhores instituições do país e do exterior.</p> -->
-              <!-- <p>Conheça mais sobre o departamento e as áreas de interesse de atuação dos docentes.  Informações adicionais podem ser obtidas pelos telefones: 3011-4324 e 3011-4219.</p> -->
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="pull-right visible-xs" style="padding-bottom: 5px">
+                  <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Menu Lateral</button>
+                </div>
+              </div>
             </div>
+            
 
             <div class="row">
 
               <div class="col-xs-12 col-md-6">
-                <div class="panel panel-primary">
+                <div class="panel panel-primary panel-custom">
                   <div class="panel-heading">
                     <h3 class="panel-title">Notícias</h3>
                   </div>
                   <div class="panel-body">
-                    <ul>
-                    Data da noticia
-                      <li><a href="#">Notícia 1</a></li>
-                      <li><a href="#">Notícia 2</a></li>
-                      <li><a href="#">Notícia 3</a></li>
-                    </ul>
+                    <div class="noticias">
+                      <div class="noticia">
+                        <div class="not-data">23 de Julho</div>
+                        <div class="not-titulo"><a href="#">Abertura de Concurso para Logotipo da Semana da Computação e Informática </a></div>
+                      </div>
+                      <div class="noticia">
+                        <div class="not-data">14 de Julho</div>
+                        <div class="not-titulo"><a href="#">NP-Completo </a></div>
+                      </div>
+                      <div class="noticia">
+                        <div class="not-data">5 de Julho</div>
+                        <div class="not-titulo"><a href="#">O PET-Informática e a Comunidade Acadêmica </a></div>
+                      </div>
+                      <div class="noticia">
+                        <div class="not-data">27 de Junho</div>
+                        <div class="not-titulo"><a href="#">Exemplo notícia 4</a></div>
+                      </div>
+                    </div>
                   </div>
                   <div class="panel-footer"><a href="#">Todas as notícias <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
                 </div>
               </div><!--/.col-xs-6.col-lg-4-->
 
               <div class="col-xs-12 col-md-6">
-                <div class="panel panel-primary">
+                <div class="panel panel-primary panel-custom">
                   <div class="panel-heading">
                     <h3 class="panel-title">Eventos</h3>
                   </div>
                   <div class="panel-body">
-                    <ul>
-                     Data do evento
-                      <li><a href="#">Evento 1 </a> <span class="label label-danger">Novo</span></li>
-                      <li><a href="#">Evento X</a></li>
-                    </ul>
+                    <div class="eventos">
+                      <div class="evento">
+                        <div class="evento-data">25 de Julho</div>
+                        <div class="evento-titulo"><a href="#">Evento 1</a></div>
+                      </div>
+                      <div class="evento">
+                        <div class="evento-data">26 de Julho</div>
+                        <div class="evento-titulo"><a href="#">Evento X</a></div>
+                      </div>
+                      <div class="evento">
+                        <div class="evento-data">26 de Julho</div>
+                        <div class="evento-titulo"><a href="#">Palestra</a></div>
+                      </div>
+                      <div class="evento">
+                        <div class="evento-data">26 de Julho</div>
+                        <div class="evento-titulo"><a href="#">Capacitação Y</a></div>
+                      </div>
+                    </div>
                   </div>
                   <div class="panel-footer"><a href="/WebSiteDIN/eventos.html">Calendário completo <i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
                 </div>
